@@ -12,16 +12,20 @@
 		A6666F4320BFD406006B7539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6666F4120BFD406006B7539 /* Main.storyboard */; };
 		A6666F4520BFD406006B7539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6666F4420BFD406006B7539 /* Assets.xcassets */; };
 		A6666F4820BFD406006B7539 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6666F4620BFD406006B7539 /* LaunchScreen.storyboard */; };
+		A6666F5120BFD47E006B7539 /* CellCollapsible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6666F5020BFD47E006B7539 /* CellCollapsible.swift */; };
+		A6666F5320BFD48F006B7539 /* CellCollapsibleDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6666F5220BFD48F006B7539 /* CellCollapsibleDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A6666F3A20BFD406006B7539 /* FoldingCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoldingCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6666F3A20BFD406006B7539 /* CellCollapsible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellCollapsible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6666F3D20BFD406006B7539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6666F3F20BFD406006B7539 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6666F4220BFD406006B7539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6666F4420BFD406006B7539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6666F4720BFD406006B7539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6666F4920BFD406006B7539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6666F5020BFD47E006B7539 /* CellCollapsible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellCollapsible.swift; sourceTree = "<group>"; };
+		A6666F5220BFD48F006B7539 /* CellCollapsibleDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellCollapsibleDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +42,7 @@
 		A6666F3120BFD406006B7539 = {
 			isa = PBXGroup;
 			children = (
-				A6666F3C20BFD406006B7539 /* FoldingCells */,
+				A6666F3C20BFD406006B7539 /* CellCollapsible */,
 				A6666F3B20BFD406006B7539 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +50,40 @@
 		A6666F3B20BFD406006B7539 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A6666F3A20BFD406006B7539 /* FoldingCells.app */,
+				A6666F3A20BFD406006B7539 /* CellCollapsible.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A6666F3C20BFD406006B7539 /* FoldingCells */ = {
+		A6666F3C20BFD406006B7539 /* CellCollapsible */ = {
 			isa = PBXGroup;
 			children = (
+				A6666F4F20BFD46E006B7539 /* Sources */,
 				A6666F3D20BFD406006B7539 /* AppDelegate.swift */,
 				A6666F3F20BFD406006B7539 /* ViewController.swift */,
+				A6666F5220BFD48F006B7539 /* CellCollapsibleDemoViewController.swift */,
 				A6666F4120BFD406006B7539 /* Main.storyboard */,
 				A6666F4420BFD406006B7539 /* Assets.xcassets */,
 				A6666F4620BFD406006B7539 /* LaunchScreen.storyboard */,
 				A6666F4920BFD406006B7539 /* Info.plist */,
 			);
-			path = FoldingCells;
+			path = CellCollapsible;
+			sourceTree = "<group>";
+		};
+		A6666F4F20BFD46E006B7539 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A6666F5020BFD47E006B7539 /* CellCollapsible.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A6666F3920BFD406006B7539 /* FoldingCells */ = {
+		A6666F3920BFD406006B7539 /* CellCollapsible */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6666F4C20BFD406006B7539 /* Build configuration list for PBXNativeTarget "FoldingCells" */;
+			buildConfigurationList = A6666F4C20BFD406006B7539 /* Build configuration list for PBXNativeTarget "CellCollapsible" */;
 			buildPhases = (
 				A6666F3620BFD406006B7539 /* Sources */,
 				A6666F3720BFD406006B7539 /* Frameworks */,
@@ -79,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = FoldingCells;
+			name = CellCollapsible;
 			productName = FoldingCells;
-			productReference = A6666F3A20BFD406006B7539 /* FoldingCells.app */;
+			productReference = A6666F3A20BFD406006B7539 /* CellCollapsible.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A6666F3520BFD406006B7539 /* Build configuration list for PBXProject "FoldingCells" */;
+			buildConfigurationList = A6666F3520BFD406006B7539 /* Build configuration list for PBXProject "CellCollapsible" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A6666F3920BFD406006B7539 /* FoldingCells */,
+				A6666F3920BFD406006B7539 /* CellCollapsible */,
 			);
 		};
 /* End PBXProject section */
@@ -135,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6666F5320BFD48F006B7539 /* CellCollapsibleDemoViewController.swift in Sources */,
 				A6666F4020BFD406006B7539 /* ViewController.swift in Sources */,
 				A6666F3E20BFD406006B7539 /* AppDelegate.swift in Sources */,
+				A6666F5120BFD47E006B7539 /* CellCollapsible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +298,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22249MHDPE;
-				INFOPLIST_FILE = FoldingCells/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CellCollapsible/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +317,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22249MHDPE;
-				INFOPLIST_FILE = FoldingCells/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CellCollapsible/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +333,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A6666F3520BFD406006B7539 /* Build configuration list for PBXProject "FoldingCells" */ = {
+		A6666F3520BFD406006B7539 /* Build configuration list for PBXProject "CellCollapsible" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A6666F4A20BFD406006B7539 /* Debug */,
@@ -324,7 +342,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6666F4C20BFD406006B7539 /* Build configuration list for PBXNativeTarget "FoldingCells" */ = {
+		A6666F4C20BFD406006B7539 /* Build configuration list for PBXNativeTarget "CellCollapsible" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A6666F4D20BFD406006B7539 /* Debug */,
