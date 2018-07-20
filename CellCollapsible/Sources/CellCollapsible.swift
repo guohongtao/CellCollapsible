@@ -25,7 +25,7 @@ protocol CellCollapsible: class {
     var collapseSectionRowCounts: Int { get set }
     func prepareData()
     
-    func isCellCollapsed(at indexPath: IndexPath) -> Bool
+    func isCollaspiableCell(at indexPath: IndexPath) -> Bool
     func isCollapsed(at indexPath: IndexPath) -> Bool
     func collaspe(_ collaspe: Bool, at indexPath: IndexPath, in tableView: UITableView)
     func collaspeSection(at indexPath: IndexPath) -> S?
@@ -51,7 +51,7 @@ extension CellCollapsible {
 
     func collaspeSection(at indexPath: IndexPath) -> S? {
         let section = getSectionIndex(indexPath.row)
-        guard isCellCollapsed(at: indexPath) else { return nil }
+        guard isCollaspiableCell(at: indexPath) else { return nil }
         return sections[section].section
     }
 
@@ -73,7 +73,7 @@ extension CellCollapsible {
         return sections[section].collasped
     }
 
-    func isCellCollapsed(at indexPath: IndexPath) -> Bool {
+    func isCollaspiableCell(at indexPath: IndexPath) -> Bool {
         let row = getRowIndex(indexPath.row)
         return row == 0
     }

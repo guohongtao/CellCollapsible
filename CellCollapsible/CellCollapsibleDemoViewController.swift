@@ -76,7 +76,7 @@ extension CellCollapsibleDemoViewController: UITableViewDelegate, UITableViewDat
             return cell
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        if isCellCollapsed(at: indexPath) {
+        if isCollaspiableCell(at: indexPath) {
             cell.textLabel?.text = "index: " +  (collaspeSection(at: indexPath) ?? "")
             cell.textLabel?.font = UIFont.systemFont(ofSize: 18, weight: .medium)
             cell.textLabel?.textColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1)
@@ -92,7 +92,7 @@ extension CellCollapsibleDemoViewController: UITableViewDelegate, UITableViewDat
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard indexPath.section > 0 else { return }
-        guard isCellCollapsed(at: indexPath) else { return }
+        guard isCollaspiableCell(at: indexPath) else { return }
         let folded = isCollapsed(at: indexPath)
         collaspe(!folded, at: indexPath, in: tableView)
     }
