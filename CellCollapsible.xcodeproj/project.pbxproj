@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6052E0D21018AC90049420E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A6052E0C21018AC90049420E /* README.md */; };
 		A6666F3E20BFD406006B7539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6666F3D20BFD406006B7539 /* AppDelegate.swift */; };
 		A6666F4020BFD406006B7539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6666F3F20BFD406006B7539 /* ViewController.swift */; };
 		A6666F4320BFD406006B7539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6666F4120BFD406006B7539 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		A6052E0B210189670049420E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A6052E0C21018AC90049420E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A6666F3A20BFD406006B7539 /* CellCollapsible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellCollapsible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6666F3D20BFD406006B7539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6666F3F20BFD406006B7539 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,8 +45,9 @@
 		A6666F3120BFD406006B7539 = {
 			isa = PBXGroup;
 			children = (
-				A6052E0B210189670049420E /* .gitignore */,
+				A6052E0C21018AC90049420E /* README.md */,
 				A6666F3C20BFD406006B7539 /* CellCollapsible */,
+				A6052E0B210189670049420E /* .gitignore */,
 				A6666F3B20BFD406006B7539 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				A6666F4820BFD406006B7539 /* LaunchScreen.storyboard in Resources */,
 				A6666F4520BFD406006B7539 /* Assets.xcassets in Resources */,
+				A6052E0D21018AC90049420E /* README.md in Resources */,
 				A6666F4320BFD406006B7539 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
