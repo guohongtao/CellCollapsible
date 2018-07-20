@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-
 struct CollapsibleSection<S, C> {
     var section: S
     var contents: [C]
@@ -24,8 +23,8 @@ protocol CellCollapsible: class {
     var sections: [CollapsibleSection<S, C>] {get set}
     var headerIndices: [Int] { get set }
     var collapseSectionRowCounts: Int { get set }
-
     func prepareData()
+    
     func isCellCollapsed(at indexPath: IndexPath) -> Bool
     func isCollapsed(at indexPath: IndexPath) -> Bool
     func collaspe(_ collaspe: Bool, at indexPath: IndexPath, in tableView: UITableView)

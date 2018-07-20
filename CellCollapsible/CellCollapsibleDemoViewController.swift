@@ -52,18 +52,29 @@ class CellCollapsibleDemoViewController: UIViewController, CellCollapsible {
 extension CellCollapsibleDemoViewController: UITableViewDelegate, UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return 1
+        }
         return collapseSectionRowCounts
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 {
+            return 100
+        }
         return cellHeight(for: indexPath)
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            cell.textLabel?.text = "不能动"
+            return cell
+        }
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         if isCellCollapsed(at: indexPath) {
             cell.textLabel?.text = "index: " +  (collaspeSection(at: indexPath) ?? "")
@@ -80,6 +91,7 @@ extension CellCollapsibleDemoViewController: UITableViewDelegate, UITableViewDat
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard indexPath.section > 0 else { return }
         guard isCellCollapsed(at: indexPath) else { return }
         let folded = isCollapsed(at: indexPath)
         collaspe(!folded, at: indexPath, in: tableView)

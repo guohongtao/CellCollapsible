@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6052E0B210189670049420E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A6666F3A20BFD406006B7539 /* CellCollapsible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellCollapsible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6666F3D20BFD406006B7539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6666F3F20BFD406006B7539 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		A6666F3120BFD406006B7539 = {
 			isa = PBXGroup;
 			children = (
+				A6052E0B210189670049420E /* .gitignore */,
 				A6666F3C20BFD406006B7539 /* CellCollapsible */,
 				A6666F3B20BFD406006B7539 /* Products */,
 			);
